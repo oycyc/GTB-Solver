@@ -1,0 +1,271 @@
+[type=text] {
+  width: 400px;
+  padding: .5em;
+  display: block;
+  margin: 0 auto;
+  /*font-family: 'Roboto Mono', monospace;*/
+  font-family: 'MinecraftiaRegular'; 
+  font-weight: normal; 
+  font-style: normal; 
+}
+
+
+#result {
+  padding: 0;
+  font-size: 16.5px;
+  text-align: center;
+  list-style-type: none;
+}
+
+::placeholder {
+  color: black;
+  opacity: 0.75; /* Firefox */
+  text-align: center;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: black;
+  text-align: center;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: black;
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+@charset "UTF-8";
+/* 
+$content-width will be the max width of the content within the navigation bar. 
+$breakpoint determines at which width the media query breakpoint will take effect.
+*/
+
+
+nav {
+  float: right;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  float: left;
+  position: relative;
+}
+nav ul li a {
+  display: block;
+  padding: 0 20px;
+  line-height: 70px;
+  background: #ffffff;
+  color: #463f3f;
+  text-decoration: none;
+  /*
+  The full path of this code is nav ul li a:not(:only-child):after. This means that the code will apply to any a tag in our nav list that is NOT an only child, aka any dropdown. The :after means it comes after the output of the tag. I’ve decided that to specify any nav item as a dropdown, it will be followed by a unicode arrow – ▾ (#9662).
+  */
+}
+nav ul li a:hover {
+  background: #f2f2f2;
+  color: #fb5958;
+}
+nav ul li a:not(:only-child):after {
+  padding-left: 4px;
+  content: ' ▾';
+}
+nav ul li ul li {
+  min-width: 190px;
+}
+nav ul li ul li a {
+  padding: 15px;
+  line-height: 20px;
+}
+
+.nav-dropdown {
+  position: absolute;
+  z-index: 1;
+  /* Guarantees that the dropdown will display on top of any content. */
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  display: none;
+}
+
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #fff;
+  height: 70px;
+  width: 70px;
+}
+
+@media only screen and (max-width: 800px) {
+  .nav-mobile {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    padding: 70px 0 15px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    float: none;
+  }
+  nav ul li a {
+    padding: 15px;
+    line-height: 20px;
+  }
+  nav ul li ul li a {
+    padding-left: 30px;
+  }
+}
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #463f3f;
+  position: absolute;
+  display: block;
+  content: '';
+  transition: all 300ms ease-in-out;
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+@media screen and (min-width: 800px) {
+  .nav-list {
+    display: block !important;
+  }
+}
+/* 
+.navigation – the outer wrapper for the navbar. Specifies the height and color, and will stretch the full width of the viewport.
+*/
+.navigation {
+  height: 70px;
+  background: #ffffff;
+}
+
+/*
+.nav-container – the inner wrapper for the navbar. Defines how far the actual content should stretch.
+*/
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.brand {
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  line-height: 70px;
+  text-transform: uppercase;
+  font-size: 1.4em;
+}
+.brand a,
+.brand a:visited {
+  color: #463f3f;
+  text-decoration: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+    margin: 100px auto;
+    border: 1px solid #888;
+    width: auto;
+    max-width: 650px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+.modal-header {
+	background-color: #F9F9F9;
+	padding: 15px;
+	text-align: center;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom: 1px solid #CCC;
+}
+.modal-body {
+	background-color: #FEFEFE;
+	padding: 20px;
+	padding-right: 50px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.modal-title {
+	font-size: 18px;
+	margin: 0;
+}
+.modal-close {
+    color: #AAA;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -5px;
+    margin-right: 2px;
+    transition: ease 150ms;
+}
+.modal-close:hover,
+.modal-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    transition: ease 150ms;
+}
+
+.center-div {
+	padding-top: 10px;
+	text-align: center;
+}
+
+.contentfont {
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+}
+
+#subtitle {
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+	font-size: 24px
+	font-weight: 900;
