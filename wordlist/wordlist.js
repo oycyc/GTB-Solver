@@ -1,4 +1,5 @@
 var arrayData = [
+	"Abandoned Mansion",
 	"Advent Calendar",
 	"Air Horn",
 	"Airplane",
@@ -275,6 +276,7 @@ var arrayData = [
 	"Catapult",
 	"Caterpillar",
 	"Cauliflower",
+	"Cauldron",
 	"Cave",
 	"Ceiling",
 	"Ceiling Fan",
@@ -775,6 +777,7 @@ var arrayData = [
 	"Harp",
 	"Harry Potter",
 	"Hat",
+	"Haunted House",
 	"Hay",
 	"Head",
 	"Headband",
