@@ -1,3 +1,4 @@
+// navigation
 (function($) { // Begin jQuery
   $(function() { // DOM ready
     // If a link has a dropdown, add sub menu toggle.
@@ -23,15 +24,13 @@
 })(jQuery); // end jQuery
 
 // Help Modal
-	var helpModal = document.getElementById("help-modal");
-	var helpBtn = document.getElementById("help-btn");
-	var helpCloseBtn = document.getElementById("help-modal-close");
+  var helpModal = document.getElementById("help-modal");
+  var helpBtn = document.getElementById("help-btn");
+  var helpCloseBtn = document.getElementById("help-modal-close");
 
-	helpBtn.addEventListener("click", function() {
-		helpModal.style.display = "block";
-	});
-	helpCloseBtn.addEventListener("click", function() {
-		helpModal.style.display = "none";
-	});
-
-	
+  helpBtn.addEventListener("click", function() {
+    helpModal.style.display = "block";
+  });
+  helpCloseBtn.addEventListener("click", function() {
+    helpModal.style.display = "none";
+  });
