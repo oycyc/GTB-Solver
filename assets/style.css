@@ -37,6 +37,18 @@
   font-weight: bold;
 }
 
+.center {
+  text-align: center;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+p {
+  text-align: center;
+}
+
 @charset "UTF-8";
 /* 
 $content-width will be the max width of the content within the navigation bar. 
