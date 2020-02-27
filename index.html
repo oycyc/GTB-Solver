@@ -1,8 +1,9 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
+
+
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122657923-2">
   </script>
   <script>
@@ -12,31 +13,46 @@
 
     gtag('config', 'UA-122657923-2');
   </script>
-  <title>Guess the Build Solver</title>
+
+
+  <title>Guess the Build Cheat & Solver</title>
+  <!-- Meta Tags -->
   <meta charset="UTF-8">
-  <meta content="Guess the Build Solver is a tool that allows the user to input hints and a list of words that fits the hints will automatically appear, saving you time and an advantage against others!" name="description">
+  <meta content="Guess the Build Cheat & Solver is a tool that allows the user to input hints and a list of corresponding words will appear, saving you time and making it easier to guess!" name="description">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="notranslate" name="google">
-  <script>
-    document.documentElement.setAttribute('data-theme','book')
-  </script>
-  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+<!-- need to add meta tag here -->
+
+
+  <!-- Fonts -->
   <link href='https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet prefetch'>
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet prefetch'>
   <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500,600,700,900' rel='stylesheet prefetch'>
   <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic' rel='stylesheet prefetch'>
   <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet prefetch'>
-  <link href='assets/theme.css' rel='stylesheet prefetch'>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
   <link href="https://fontlibrary.org/face/minecraftia" media="screen" rel="stylesheet" type="text/css">
+
+  <!-- External Links -->
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link href='assets/theme.css' rel='stylesheet prefetch'>
   <link href="assets/style.css" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js">
+
+
+  <!-- Scripts -->
+  <script>
+    document.documentElement.setAttribute('data-theme','book') // set theme from theme.css
   </script>
-  <script src="/wordlist/wordlist.js">
-  </script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script type="text/javascript" src="assets/script.js"></script>
+  <script src="/wordlist/wordlist.js"></script>
+  <script src="assets/nav.js"></script>
+  <!-- merge all the js files besides charcount and find the error of why it won't merge -->
 </head>
+
+
 <body>
+
   <!--NAVIGATION BAR-->
   <section class="navigation">
     <div class="nav-container">
@@ -56,7 +72,8 @@
           </li>
           <li>
             <a href="https://yangciou.com/contact" target="_blank">Contact</a>
-          </li><!-- THIS IS HOW YOU WOULD ADD A DROPDOWN MENU
+          </li>
+          <!-- Dropdown Menu
         <li><a href="#!">drop</a>
           <ul class="nav-dropdown">
             <li><a href="#!">d1</a></li>
@@ -68,14 +85,22 @@
       </nav>
     </div>
   </section>
+
+
+  <!-- Main Content -->
   <h2 style="text-align:center"><font color="white">Guess the Build Solver</font></h2>
   <p style="text-align:center"><font size="3">Simply enter the hints in the textbox, including underscores(_).<br>
   Tip: For spaces, do not use an underscore for better results.</font></p>
   <p class="bold" style="text-align:center">You currently have: <span id="count">0</span> characters.</p>
+
   <form>
     <input id="input" name="username" placeholder="Start entering the hints here." type="text">
   </form>
-  <div id="result"></div><!-- Help modal -->
+
+  <div id="result"></div>
+
+
+  <!-- Help Modal -->
   <div class="modal" id="help-modal">
     <div class="modal-content">
       <div class="modal-header">
@@ -115,8 +140,7 @@
   </div>
   <footer style="font-size: 16px">
     <strong>Last Updated: 2/26/2020</strong>
-  </footer><!-- NAVIGATION BAR SCRIPT -->
+  </footer>
   <script src="charcount.js"></script>
-  <script src="assets/nav.js"></script>
 </body>
 </html>
