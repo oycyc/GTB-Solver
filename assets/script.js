@@ -1,4 +1,4 @@
-// regex search
+// Regex Search
 $(document).ready(function () {
       var wordsArray = arrayData;
      
@@ -40,7 +40,7 @@ $(document).ready(function () {
     });  
 
 
-// navigation
+// Navigation Bar
 (function($) { // Begin jQuery
   $(function() { // DOM ready
     // If a link has a dropdown, add sub menu toggle.
@@ -64,6 +64,7 @@ $(document).ready(function () {
     });
   }); // end DOM ready
 })(jQuery); // end jQuery
+
 
 // Help Modal
   var helpModal = document.getElementById("help-modal");
