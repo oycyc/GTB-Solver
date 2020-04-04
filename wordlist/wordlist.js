@@ -381,6 +381,7 @@ var arrayData = [
 	"Computer Desk",
 	"Computer Keyboard",
 	"Computer Mouse",
+	"Computer Monitor",
 	"Computer Screen",
 	"Concert",
 	"Console games",
