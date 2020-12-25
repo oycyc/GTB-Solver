@@ -1,0 +1,2 @@
+# IMPORTANT
+## Update your words on `wordlist.js`, not the other files. The submission files were words from the Google Forms -- the words at the bottom of the file aren't added yet. There's no use besides that, it can be deleted.
