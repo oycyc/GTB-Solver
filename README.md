@@ -1,4 +1,4 @@
-# GTB-Solver **This is no longer being maintained**
+# GTB-Solver !!gtb.yangciou.com is no longer being updated!!
 ## To Use This:
 - Download the source code
 - Open index.html in a browser
